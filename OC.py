@@ -3,6 +3,7 @@
 
 import os
 import requests
+# pip3 install PyGithub
 from github import Github
 
 base_path = './OpenCore'
@@ -10,21 +11,19 @@ debug = 'DEBUG'
 repo_oc = 'acidanthera/OpenCorePkg'
 repo_other = [
     'acidanthera/OpenCorePkg',
-    'acidanthera/WhateverGreen',
     'acidanthera/Lilu',
-    'acidanthera/VirtualSMC',
     'acidanthera/AppleALC',
-    'acidanthera/RTCMemoryFixup',
+    'acidanthera/VirtualSMC',
     'acidanthera/BrcmPatchRAM',
+    'acidanthera/WhateverGreen',
     'acidanthera/AirportBrcmFixup',
-    'Mieze/LucyRTL8125Ethernet',
     'OpenIntelWireless/IntelBluetoothFirmware',
-    'OpenIntelWireless/IntelBluetoothFirmware',
-    'acidanthera/IntelMausi'
+    'OpenIntelWireless/itlwm'
+    # 'Mieze/LucyRTL8125Ethernet'
 ]
 
 # https://github.com/settings/tokens
-g = Github('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')
+g = Github('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')
 
 
 def get_local_path(version):
@@ -78,6 +77,7 @@ if __name__ == '__main__':
         print('Version %s exist, stop.' % version_name)
         exit()
     for item in repo_other:
+        print(item)
         repo = g.get_repo(item)
         release = repo.get_latest_release()
         for asset in release.get_assets():
