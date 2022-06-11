@@ -1,6 +1,6 @@
 # Hackintosh with OpenCore
 
-Update: [OpenCore 0.8.0](https://github.com/acidanthera/OpenCorePkg)
+Update: [OpenCore 0.8.1](https://github.com/acidanthera/OpenCorePkg)
 
 ## 0x00 Hardware
 
@@ -12,7 +12,7 @@ Update: [OpenCore 0.8.0](https://github.com/acidanthera/OpenCorePkg)
 | 4     | RAM               | [Kingston Fury DDR4 3200 16GBx2](https://item.jd.com/100005089420.html)                                                                            |
 | 5     | Solid State Drive | [SAMSUNG 970 EVO Plus 512G](https://item.jd.com/100003181110.html)                                                                                 |
 | 6     | Power Supply      | [USCORSAIR SF600](https://www.corsair.com/us/en/Categories/Products/Power-Supply-Units/Power-Supply-Units-Advanced/SF-Series/p/CP-9020182-NA)      |
-| 7     | Case              | VECTOR-1 SE                                                                                                                                        |
+| 7     | Case              | [VECTOR-1 SE](https://item.taobao.com/item.htm?id=627430968966)                                                                                    |
 | 8     | Monitor           | [DELL 2718QM](https://item.jd.com/4585499.html)                                                                                                    |
 | 9     | Network Card      | [BCM943602CS](https://item.taobao.com/item.htm?id=608922155647)                                                                                    |
 
@@ -73,12 +73,12 @@ TODO
 - [Lilu](https://github.com/acidanthera/Lilu)
 - [VirtualSMC](https://github.com/acidanthera/VirtualSMC)
 - [AppleALC](https://github.com/acidanthera/AppleALC)
-- [RTCMemoryFixup](https://github.com/acidanthera/RTCMemoryFixup)
-- [BrcmPatchRAM](https://github.com/acidanthera/BrcmPatchRAM)
-- [AirportBrcmFixup](https://github.com/acidanthera/AirportBrcmFixup)
+- [LucyRTL8125Ethernet](https://github.com/Mieze/LucyRTL8125Ethernet)
+- [USBInjectAll](https://github.com/RehabMan/OS-X-USB-Inject-All)
 
 ### Tools
 
+- [HackintoshBuild](https://github.com/bugprogrammer/HackintoshBuild)
 - [ProperTree](https://github.com/corpnewt/ProperTree)
 - [MacInfoPkg](https://github.com/acidanthera/MacInfoPkg)
 - [GenSMBIOS](https://github.com/corpnewt/GenSMBIOS)
@@ -92,10 +92,17 @@ TODO
 
 `python3 OC.py`
 
-## 0x05 感谢
+
+## 0x05 问题
+
+水冷和网卡都需要用到USB2.0（9PIN），基于以上配置，可以把两个9PIN的接口保持线序列合二为一即可。当然也可以直接买内置USB2.0的HUB（主板USB2.0 9针转双9针一分二）。
+
+
+## 0x06 感谢
 
 1. [wjz304/Hackintosh-EFI-MSI-Z490i-Unify](https://github.com/wjz304/Hackintosh-EFI-MSI-Z490i-Unify)
 1. [gngpp/MSI-MEG-Z490I-Unify-Hackintosh-OC-EFI](https://github.com/gngpp/MSI-MEG-Z490I-Unify-Hackintosh-OC-EFI)
+1. [Hackintosh-MSI-MEG-z490i-UNIFY-OpenCore](https://github.com/H3C4T0M8/Hackintosh-MSI-MEG-z490i-UNIFY-OpenCore)
 
 
 ## 0xFF Reference
